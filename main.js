@@ -30,6 +30,10 @@ function factorial(factorialNumber) {
     return(uitkomst);
   }
 
+  else if (factorialNumber === 0) {
+    return(1);
+  }
+
   else {
     // We don't use negatives
     return("Function doen't work with negatives");
