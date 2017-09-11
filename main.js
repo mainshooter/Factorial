@@ -17,13 +17,22 @@ console.log(result5);
 function factorial(factorialNumber) {
   var uitkomst;
 
-  for (var i = factorialNumber; i > 0; i--) {
-    if (factorialNumber === i) {
-      uitkomst = factorialNumber;
+  if (factorialNumber > 0) {
+    // We can run with it
+    for (var i = factorialNumber; i > 0; i--) {
+      if (factorialNumber === i) {
+        uitkomst = factorialNumber;
+      }
+      else {
+        uitkomst = uitkomst * i;
+      }
     }
-    else {
-      uitkomst = uitkomst * i;
-    }
+    return(uitkomst);
   }
-  return(uitkomst);
+
+  else {
+    // We don't use negatives
+    return("Function doen't work with negatives");
+  }
+
 }
