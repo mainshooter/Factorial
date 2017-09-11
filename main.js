@@ -16,11 +16,10 @@ console.log(result5);
 
 function factorial(factorialNumber) {
   var uitkomst;
-  var teller = 0;
+
   for (var i = factorialNumber; i > 0; i--) {
-    if (teller === 0) {
+    if (factorialNumber === i) {
       uitkomst = factorialNumber;
-      teller++;
     }
     else {
       uitkomst = uitkomst * i;
