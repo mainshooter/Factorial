@@ -14,6 +14,11 @@ var result5 = factorial(-1);
 console.log(result5);
 
 
+/**
+ * A factorial function
+ * @param  {[int]} factorialNumber [A number]
+ * @return {[int / string]}                 [A number when we can work with it / when we get a int lower than 0]
+ */
 function factorial(factorialNumber) {
   var uitkomst;
 
