@@ -12,3 +12,19 @@ console.log(result4);
 
 var result5 = factorial(-1);
 console.log(result5);
+
+
+function factorial(factorialNumber) {
+  var uitkomst;
+  var teller = 0;
+  for (var i = factorialNumber; i > 0; i--) {
+    if (teller === 0) {
+      uitkomst = factorialNumber;
+      teller++;
+    }
+    else {
+      uitkomst = uitkomst * i;
+    }
+  }
+  return(uitkomst);
+}
