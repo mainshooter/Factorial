@@ -20,19 +20,19 @@ console.log(result5);
  * @return {[int / string]}                 [A number when we can work with it / when we get a int lower than 0]
  */
 function factorial(factorialNumber) {
-  var uitkomst;
+  var outcome;
 
   if (factorialNumber > 0) {
     // We can run with it
     for (var i = factorialNumber; i > 0; i--) {
       if (factorialNumber === i) {
-        uitkomst = factorialNumber;
+        outcome = factorialNumber;
       }
       else {
-        uitkomst = uitkomst * i;
+        outcome = uitkomst * i;
       }
     }
-    return(uitkomst);
+    return(outcome);
   }
 
   else if (factorialNumber === 0) {
